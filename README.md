@@ -3,7 +3,7 @@
 ## Screenshots of different displays
 
 Desktop (1280px)
-![](https://github.com/YoonadiMon/dccl--frontend-simple-coffee-listing/blob/main/SimpleCoffeeListing_DesktopView.png?raw=true)_
+![](https://github.com/YoonadiMon/dccl--frontend-simple-coffee-listing/blob/main/SimpleCoffeeListing_DesktopView.png?raw=true)
 
 Tablet (1024px)
 ![](https://github.com/YoonadiMon/dccl--frontend-simple-coffee-listing/blob/main/SimpleCoffeeListing_TabletView.png?raw=true)
