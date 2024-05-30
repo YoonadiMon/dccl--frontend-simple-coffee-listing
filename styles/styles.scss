@@ -1,0 +1,137 @@
+$lightBlack: #1B1D1F;
+$darkBlack: #111315;
+$grey: #6F757C;
+$softGreen: #BEE3CC;
+$cream: #FEF7EE;
+$yellowishOrange: #F6C768;
+$reddishOrange: #ED735D;
+$borderRadius: 1rem;
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+body {
+  background-color: $darkBlack;
+  color: $cream;
+  font-family: "DM Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+}
+#hero-img {
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  z-index: 0;
+}
+#card-container {
+  background-color: $lightBlack;
+  width: 90vmax;
+  position: absolute;
+  z-index: 1;
+  margin: 25vh 0 2rem 0;
+  padding: 4rem 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: $borderRadius;
+}
+#intro {
+  width: 50%;
+  text-align: center;
+  margin-bottom: 1.4rem;
+  #vector-swril {
+    position: absolute;
+    width: 20%;
+    left: 50%;
+    top: 10%;
+    z-index: -2;
+  }
+  button {
+    border: none;
+    background-color: transparent;
+    color: $cream;
+    font-size: 0.8rem;
+    margin: 0 0.4rem;
+    padding: 0.5rem 0.8rem;
+    display: inline;
+    width: fit-content;
+    border-radius: 1rem;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  #intro-txt {
+    margin-bottom: 1rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  p {
+    color: $grey;
+  }
+}
+.card-area {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem 2rem;
+  .cards {
+    img {
+      border-radius: $borderRadius;
+    }
+    .img-row {
+      p {
+        position: absolute;
+        z-index: 1;
+        background-color: $yellowishOrange;
+        border-radius: $borderRadius + 12;
+        padding: 0.3rem 0.8rem;
+        font-size: 0.8rem;
+        margin: 0.6rem;
+        color: $darkBlack;
+      }
+      
+    }
+    .coffee-row {
+      display: flex;
+      justify-content: space-between;
+    }
+    .rating-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      img {
+        margin-right: 0.2rem;
+      }
+      &>span {
+        color: $reddishOrange;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .card-area {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 640px) {
+  #hero-img {
+    height: 30vh;
+  }
+  #card-container {
+    width: 65%;
+    margin-top: 5rem;
+    padding: 4rem 1rem;
+  }
+  #intro {
+    width: 80%;
+  }
+  .card-area {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+body {
+  background-color: #111315;
+  color: #FEF7EE;
+  font-family: "DM Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+#hero-img {
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  z-index: 0;
+}
+
+#card-container {
+  background-color: #1B1D1F;
+  width: 90vmax;
+  position: absolute;
+  z-index: 1;
+  margin: 25vh 0 2rem 0;
+  padding: 4rem 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+}
+
+#intro {
+  width: 50%;
+  text-align: center;
+  margin-bottom: 1.4rem;
+}
+#intro #vector-swril {
+  position: absolute;
+  width: 20%;
+  left: 50%;
+  top: 10%;
+  z-index: -2;
+}
+#intro button {
+  border: none;
+  background-color: transparent;
+  color: #FEF7EE;
+  font-size: 0.8rem;
+  margin: 0 0.4rem;
+  padding: 0.5rem 0.8rem;
+  display: inline;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 1rem;
+}
+#intro button:hover {
+  cursor: pointer;
+}
+#intro #intro-txt {
+  margin-bottom: 1rem;
+}
+#intro h1 {
+  font-size: 2rem;
+}
+#intro p {
+  color: #6F757C;
+}
+
+.card-area {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem 2rem;
+}
+.card-area .cards img {
+  border-radius: 1rem;
+}
+.card-area .cards .img-row p {
+  position: absolute;
+  z-index: 1;
+  background-color: #F6C768;
+  border-radius: 13rem;
+  padding: 0.3rem 0.8rem;
+  font-size: 0.8rem;
+  margin: 0.6rem;
+  color: #111315;
+}
+.card-area .cards .coffee-row {
+  display: flex;
+  justify-content: space-between;
+}
+.card-area .cards .rating-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card-area .cards .rating-row img {
+  margin-right: 0.2rem;
+}
+.card-area .cards .rating-row > span {
+  color: #ED735D;
+}
+
+@media (max-width: 1024px) {
+  .card-area {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 640px) {
+  #hero-img {
+    height: 30vh;
+  }
+  #card-container {
+    width: 65%;
+    margin-top: 5rem;
+    padding: 4rem 1rem;
+  }
+  #intro {
+    width: 80%;
+  }
+  .card-area {
+    grid-template-columns: 1fr;
+  }
+}/*# sourceMappingURL=styles.css.map */
